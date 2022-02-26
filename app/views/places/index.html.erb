@@ -1,23 +1,17 @@
-    <h1> Places I've been </h1>
-    <ul>
+
+  <h1>Places I've been </h1>
+ 
+ <% places = Place.all %>
+ <ul>
+   <% for place in places %>
+    <li>
+    <%= place.name%>
+      <a href="/places/<%= place.id %>"> <%= place.name %>  </a> 
+    </li>
+   <% end %>
+
+</ul>
     
-
-  
-
-    
-
-    <p>
-    <a href = "/post">  Charleston </a>
-    </p>
-
-    </p>
-    <a href = "/post"> Beijing </a>
-    <p>
-
-    <p>
-    <a href = "/post" > Amsterdam </a>
-    </p>
-
     <p>
     <a href = "/places/new" > Add a new place! </a>
     </p>
