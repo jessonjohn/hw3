@@ -3,9 +3,12 @@
 
 <%= form_with model: @place do |form| %>
 <p>
-<%= form.label "Place Name"%>
-<%= form.text_field "Place Name"%>
+
+<%= form.label "Place Name" %>
+<%= form.text_field "name" %>
+
+</p>
 
   <%= form.submit %>
-</p>
+
 <% end %>
